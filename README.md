@@ -62,8 +62,12 @@ terraform init
 terraform plan
 terraform apply
 ```
-⚠️ Remember to destroy resources after practice to avoid AWS charges.
 
+**⚠️ Remember to destroy resources after practice to avoid AWS charges.**
+
+```bash
+terraform destroy
+```
 
 ---
 
