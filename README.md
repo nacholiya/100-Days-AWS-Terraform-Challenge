@@ -19,7 +19,7 @@ This repository documents my **100 Days of Terraform + AWS Challenge**.
 - ✅ Terraform-only (Infrastructure as Code)
 - ✅ Consistent GitHub commits (except weekends)
 - ✅ Real AWS services (production mindset)
-- ✅ Clean, reusable, and documented code
+- ✅ Cost-aware infrastructure (free-tier & cleanup focused)
 
 This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 
@@ -61,8 +61,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-- ⚠️ Remember to destroy resources after practice to avoid AWS charges.
-- ✅ Cost-aware infrastructure (free-tier & cleanup focused)
+⚠️ Remember to destroy resources after practice to avoid AWS charges.
 
 
 ---
