@@ -43,14 +43,14 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 
 | Day | Topic | Description | Status | Code |
 |----|------|------------|--------|------|
-| Day 01 | IAM Basics | IAM User, Policy, Access Key | ✅ | [View](./Day-01) |
-| Day 02 | S3 | Bucket, Versioning, Encryption | ✅ | [View](./Day-02) |
-| Day 03 | DynamoDB | Create DynamoDB Table | ✅ | [View](./Day-03) |
-| Day 04 | VPC | VPC, Subnet, IGW, Route Tables | ✅ | [View](./Day-04) |
-| Day 05 | EC2 | EC2, Key Pair, SG, Networking | ✅ | [View](./Day-05) |
-| Day 06 | ALB | Application Load Balancer | ✅ | [View](./Day-06) |
-| Day 07 | ASG | Auto Scaling Group + ALB | ✅ | [View](./Day-07) |
-| **Day 08** | **EBS** | **EC2 with Attached EBS Volume** | ✅ | [View](./Day-08) |
+| Day 01 | IAM Basics | IAM User, Policy, Access Key | ✅ | [View](./Day-01-iam) |
+| Day 02 | S3 | Bucket, Versioning, Encryption | ✅ | [View](./Day-02-s3) |
+| Day 03 | DynamoDB | Create DynamoDB Table | ✅ | [View](./Day-03-dynamobd) |
+| Day 04 | VPC | VPC, Subnet, IGW, Route Tables | ✅ | [View](./Day-04-vpc) |
+| Day 05 | EC2 | EC2, Key Pair, SG, Networking | ✅ | [View](./Day-05-ec2) |
+| Day 06 | ALB | Application Load Balancer | ✅ | [View](./Day-06-alb) |
+| Day 07 | ASG | Auto Scaling Group + ALB | ✅ | [View](./Day-07-asg) |
+| **Day 08** | **EBS** | **EC2 with Attached EBS Volume** | ✅ | [View](./Day-08-ec2+ebs) |
 
 ---
 
