@@ -38,6 +38,7 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 ## 📆 Progress Tracker (Updated Daily)
 
 > ⏸️ **Note:** Saturdays & Sundays are OFF days
+> 
 > 📌 Each day includes Terraform code, AWS best practices, and cleanup steps.
 
 
