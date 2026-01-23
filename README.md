@@ -1,6 +1,6 @@
 # 🚀 100 Days of Terraform with AWS
 
-![Days Completed](https://img.shields.io/badge/Days%20Completed-08%2F100-brightgreen)
+**Progress:** Day {{DAY_COUNT}} / 100 🚀
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-purple)
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
 ![Status](https://img.shields.io/badge/Consistency-Daily%20Push-success)
@@ -51,7 +51,9 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | Day 05 | EC2 | EC2, Key Pair, SG, Networking | ✅ | [View](./Day-05-ec2) |
 | Day 06 | ALB | Application Load Balancer | ✅ | [View](./Day-06-alb) |
 | Day 07 | ASG | Auto Scaling Group + ALB | ✅ | [View](./Day-07-asg) |
-| **Day 08** | **EBS** | **EC2 with Attached EBS Volume** | ✅ | [View](./Day-08-ec2+ebs) |
+| Day 08 | EBS | EC2 with Attached EBS Volume | ✅ | [View](./Day-08-ec2+ebs) |
+| **Day 9** | **EC2 Launch Templates** | **Versioned EC2 launch configs, immutable updates** | ✅ | [View](./Day-09-ec2-lt/) |
+
 
 ---
 
@@ -72,7 +74,7 @@ terraform destroy
 ---
 
 ## 🧭 What’s Next
-- **Day 9** — Launch Templates Deep Dive + Versioning
+- **Day 10** — EC2 User Data & Bootstrapping (Zero-touch servers)
 - Focus on reusable, production-grade infrastructure
 
 ---
