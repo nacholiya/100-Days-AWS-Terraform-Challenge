@@ -24,7 +24,7 @@ jobs:
 
       - name: Update README Day Count
         run: |
-          sed -i "s/{{DAY_COUNT}}/${{ steps.count.outputs.day_count }}/g" README.md
+          sed -i -E "s/Day [0-9]+ \/ 100/Day ${{ steps.count.outputs.day_count }} \/ 100/g" README.md
 
       - name: Commit README Update
         run: |
