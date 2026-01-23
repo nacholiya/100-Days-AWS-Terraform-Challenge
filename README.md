@@ -74,7 +74,7 @@ terraform destroy
 ---
 
 ## 🧭 What’s Next
-- **Day 10** — Launch Templates Deep Dive + Versioning
+- **Day 10** — EC2 User Data & Bootstrapping (Zero-touch servers)
 - Focus on reusable, production-grade infrastructure
 
 ---
