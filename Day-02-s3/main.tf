@@ -1,6 +1,12 @@
 ##Creating S3 Bucket
 resource "aws_s3_bucket" "challenge_bucket" {
-  bucket = "tf-100days-challange-bucket"
+  bucket = var.bucket_name
+
+  tags = {
+    Name = "day-02-s3-bucket"
+    Environment = "learning"
+    Project     = "100-days-terraform"
+  }
 }
 
 ##Enable Versioning
