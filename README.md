@@ -56,7 +56,9 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 07 | ASG | Auto Scaling Group + ALB | ✅ | [View](./Day-07-asg) |
 | 08 | EBS | EC2 with Attached EBS Volume | ✅ | [View](./Day-08-ec2+ebs) |
 | 09 | EC2 Launch Templates | Versioned EC2 launch configs, immutable updates | ✅ | [View](./Day-09-ec2-lt/) |
-| **10**  | **CloudWatch Logs** | **Centralized EC2 logging with CloudWatch Agent** | **✅** | **[View](./Day-10-cloudwatch)** |
+| 10  | CloudWatch Logs | Centralized EC2 logging with CloudWatch Agent | ✅ | [View](./Day-10-cloudwatch) |
+| **11** | **SNS + CloudWatch Alarm** | **CPU-based alerting with SNS notifications** | **✅** | **[View](./Day-11-sns/0)** |
+
 
 
 ---
@@ -78,7 +80,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 11** — AWS SNS (Simple Notification Service)
+- **Day 12** — CloudWatch Dashboards
 - Focus on reusable, production-grade infrastructure
 
 ---
