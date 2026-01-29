@@ -17,12 +17,17 @@ versioning and encryption enabled to follow basic data security best practices.
 Terraform → Amazon S3 → Secure Object Storage
 
 ## How to Deploy
+
+```bash
 terraform init
 terraform plan
 terraform apply
-
+```
 ## How to Clean Up
+
+```bash
 terraform destroy
+```
 
 ## Key Learnings
 - S3 bucket configuration using Terraform

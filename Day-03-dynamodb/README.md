@@ -14,12 +14,17 @@ and a partition key for scalable, serverless data storage.
 Terraform → DynamoDB → Key-Value Storage
 
 ## How to Deploy
+
+```bash
 terraform init
 terraform plan
 terraform apply
-
+```
 ## How to Clean Up
+
+```bash
 terraform destroy
+```
 
 ## Key Learnings
 - Partition key importance

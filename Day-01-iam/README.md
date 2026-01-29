@@ -16,12 +16,17 @@ including IAM users, policies, and policy attachments following least-privilege 
 Terraform → AWS IAM → User & Policy Management
 
 ## How to Deploy
+
+```bash
 terraform init
 terraform plan
 terraform apply
-
+```
 ## How to Clean Up
+
+```bash
 terraform destroy
+```
 
 ## Key Learnings
 - IAM user and policy structure
