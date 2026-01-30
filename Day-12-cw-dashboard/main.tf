@@ -4,7 +4,6 @@ resource "aws_launch_template" "cloudwatch_lt" {
   image_id      = "ami-0f5ee92e2d63afc18" # Amazon Linux 2 (Mumbai)
   instance_type = "t2.micro"
 
-  user_data = base64encode(file("user-data.sh"))
 
   tag_specifications {
     resource_type = "instance"
