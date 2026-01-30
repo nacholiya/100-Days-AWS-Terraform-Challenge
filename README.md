@@ -58,7 +58,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 09 | EC2 Launch Templates | Versioned EC2 launch configs, immutable updates | ✅ | [View](./Day-09-ec2-lt/) |
 | 10 | CloudWatch Logs | Centralized EC2 logging with CloudWatch Agent | ✅ | [View](./Day-10-cloudwatch) |
 | 11 | SNS + CloudWatch Alarm | CPU-based alerting with SNS notifications | ✅ | [View](./Day-11-sns) |
-| **12** | **CloudWatch Dashboards** | **EC2 metrics visualization using CloudWatch dashboards** | **✅** | **[View](./Day-12-cw-dashboard/)** |
+| 12 | CloudWatch Dashboards | EC2 metrics visualization using CloudWatch dashboards | ✅ | [View](./Day-12-cw-dashboard/) |
+| **13** | **IAM Roles & Instance Profiles** | **EC2 IAM role with least-privilege access verified via STS assume-role** | **✅** | **[View](./Day-13-iam-adv/)** |
 
 
 
@@ -82,7 +83,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 13** —  IAM Roles ( Advanced ) 
+- **Day 14** = IAM Least Privilege (bucket-level access + conditions) 
 - Focus on reusable, production-grade infrastructure
 
 ---
