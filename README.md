@@ -60,7 +60,9 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 11 | SNS + CloudWatch Alarm | CPU-based alerting with SNS notifications | ✅ | [View](./Day-11-sns) |
 | 12 | CloudWatch Dashboards | EC2 metrics visualization using CloudWatch dashboards | ✅ | [View](./Day-12-cw-dashboard/) |
 | 13| IAM Roles & Instance Profiles | EC2 IAM role with least-privilege access verified via STS assume-role | ✅ | [View](./Day-13-iam-adv/) |
-| **14** | **IAM Least Privilege** | **Bucket-scoped IAM policy with removal of broad S3 permissions** | **✅** | **[View](./Day-14-s3-adv)** |
+| 14 | IAM Least Privilege | Bucket-scoped IAM policy with removal of broad S3 permissions | ✅ | [View](./Day-14-s3-adv) |
+| **15** | **VPC Advanced** | **Public & private subnets with NAT Gateway for secure outbound access** | **✅** | **[View](./Day-15-vpc-adv/)** |
+
 
 
 
@@ -84,7 +86,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 15** = VPC Advanced Networkind 
+- **Day 16** = Baiston Host + Private EC2 ( Zero Public IPs) 
 - Focus on reusable, production-grade infrastructure
 
 ---
