@@ -35,3 +35,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+#key-pair
+day-16-key-pair
+day-16-key-pair.pub
