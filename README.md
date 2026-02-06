@@ -63,7 +63,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 14 | IAM Least Privilege | Bucket-scoped IAM policy with removal of broad S3 permissions | ✅ | [View](./Day-14-s3-adv) |
 | 15 | VPC Advanced | Public & private subnets with NAT Gateway for secure outbound access | ✅ | [View](./Day-15-vpc-adv/) |
 | 16 | Bastion Host | Secure SSH access to private EC2 via bastion host | ✅ | [View](./Day-16-bastion-private-ec2/) |
-| **17** | **ASG Scaling Policies** | **Target tracking and step scaling based on CPU utilization** | **✅** | **[View](./Day-17-asg-scaling-policies/)** |
+| 17 | ASG Scaling Policies | Target tracking and step scaling based on CPU utilization | ✅ | [View](./Day-17-asg-scaling-policies/) |
+| **18** | **ALB Advanced** | **Path-based routing using Application Load Balancer** | **✅** | **[View](./Day-18-alb-adv/)** |
 
 ---
 
@@ -84,7 +85,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 18** = ALB Advanced Path & Host-Based Routing 
+- **Day 19** = Amazon Route 53 ( DNS + ALB Alias) 
 - Focus on reusable, production-grade infrastructure
 
 ---
