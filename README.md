@@ -64,7 +64,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 15 | VPC Advanced | Public & private subnets with NAT Gateway for secure outbound access | ✅ | [View](./Day-15-vpc-adv/) |
 | 16 | Bastion Host | Secure SSH access to private EC2 via bastion host | ✅ | [View](./Day-16-bastion-private-ec2/) |
 | 17 | ASG Scaling Policies | Target tracking and step scaling based on CPU utilization | ✅ | [View](./Day-17-asg-scaling-policies/) |
-| **18** | **ALB Advanced** | **Path-based routing using Application Load Balancer** | **✅** | **[View](./Day-18-alb-adv/)** |
+| 18 | ALB Advanced | Path-based routing using Application Load Balancer | ✅ | [View](./Day-18-alb-adv/) |
+| **19** | **Route 53** | **Hosted zones and ALB alias records without custom domain** | **✅** | **[View](./Day-19-route53)** |
 
 ---
 
@@ -85,7 +86,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 19** = Amazon Route 53 ( DNS + ALB Alias) 
+- **Day 20** = ACM HTTPS with ALB 
 - Focus on reusable, production-grade infrastructure
 
 ---
