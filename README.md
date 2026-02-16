@@ -65,7 +65,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 16 | Bastion Host | Secure SSH access to private EC2 via bastion host | ✅ | [View](./Day-16-bastion-private-ec2/) |
 | 17 | ASG Scaling Policies | Target tracking and step scaling based on CPU utilization | ✅ | [View](./Day-17-asg-scaling-policies/) |
 | 18 | ALB Advanced | Path-based routing using Application Load Balancer | ✅ | [View](./Day-18-alb-adv/) |
-| **19** | **Route 53** | **Hosted zones and ALB alias records without custom domain** | **✅** | **[View](./Day-19-route53)** |
+| 19 | Route 53 | Hosted zones and ALB alias records without custom domain | ✅ | [View](./Day-19-route53) |
+| **20** | **ACM** | **Enable HTTPS on ALB using AWS Certificate Manager** | **✅** | **[View](./Day-20-acm/)** |
 
 ---
 
@@ -86,7 +87,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 20** = ACM HTTPS with ALB 
+- **Day 21** = EFS Shared file system for EC2 
 - Focus on reusable, production-grade infrastructure
 
 ---
