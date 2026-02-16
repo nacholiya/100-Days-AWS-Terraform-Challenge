@@ -39,3 +39,7 @@ terraform.rc
 #key-pair
 day-16-key-pair
 day-16-key-pair.pub
+
+# TLS Certificates
+private.key
+certificate.crt
