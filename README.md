@@ -66,7 +66,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 17 | ASG Scaling Policies | Target tracking and step scaling based on CPU utilization | ✅ | [View](./Day-17-asg-scaling-policies/) |
 | 18 | ALB Advanced | Path-based routing using Application Load Balancer | ✅ | [View](./Day-18-alb-adv/) |
 | 19 | Route 53 | Hosted zones and ALB alias records without custom domain | ✅ | [View](./Day-19-route53) |
-| **20** | **ACM** | **Enable HTTPS on ALB using AWS Certificate Manager** | **✅** | **[View](./Day-20-acm/)** |
+| 20 | ACM | Enable HTTPS on ALB using AWS Certificate Manager | ✅ | [View](./Day-20-acm/) |
+| **21** | **EFS** | **Shared file system for EC2 using Amazon EFS with automated mounting via user data** | **✅** | **[View](./Day-21-efs/)** |
 
 ---
 
@@ -87,7 +88,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 21** = EFS Shared file system for EC2 
+- **Day 22** = AWS Backup EC2 & EBS backup plans 
 - Focus on reusable, production-grade infrastructure
 
 ---
