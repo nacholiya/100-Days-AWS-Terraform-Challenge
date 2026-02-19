@@ -68,7 +68,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 19 | Route 53 | Hosted zones and ALB alias records without custom domain | ✅ | [View](./Day-19-route53) |
 | 20 | ACM | Enable HTTPS on ALB using AWS Certificate Manager | ✅ | [View](./Day-20-acm/) |
 | 21 | EFS | Shared file system for EC2 using Amazon EFS with automated mounting via user data | ✅ | [View](./Day-21-efs) |
-| **22** | **AWS Backup** | **Automated backups for EC2 and EBS** | **✅** | **[View](./Day-22-aws-backup/)** |
+| 22 | AWS Backup | Automated backups for EC2 and EBS | ✅ | [View](./Day-22-aws-backup/) |
+| **23** | **KMS** | **Customer-managed keys for encryption at rest** | **✅** | **[View](./Day-23-kms/)** |
 
 ---
 
@@ -89,7 +90,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 23** = KMS Customer-managed keys 
+- **Day 24** = Secrets Manager Store & retrieve secrets
 - Focus on reusable, production-grade infrastructure
 
 ---
