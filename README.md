@@ -69,7 +69,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 20 | ACM | Enable HTTPS on ALB using AWS Certificate Manager | ✅ | [View](./Day-20-acm/) |
 | 21 | EFS | Shared file system for EC2 using Amazon EFS with automated mounting via user data | ✅ | [View](./Day-21-efs) |
 | 22 | AWS Backup | Automated backups for EC2 and EBS | ✅ | [View](./Day-22-aws-backup/) |
-| **23** | **KMS** | **Customer-managed keys for encryption at rest** | **✅** | **[View](./Day-23-kms/)** |
+| 23 | KMS | Customer-managed keys for encryption at rest | ✅ | [View](./Day-23-kms/) |
+| **24** | **Secrets Manager** | **Secure storage and retrieval of secrets** | **✅** | **[View](./Day-24-secrets-manager/)** |
 
 ---
 
@@ -90,7 +91,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 24** = Secrets Manager Store & retrieve secrets
+- **Day 25** = SSM Parameter Store Config without hardcoding
 - Focus on reusable, production-grade infrastructure
 
 ---
