@@ -70,7 +70,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 21 | EFS | Shared file system for EC2 using Amazon EFS with automated mounting via user data | ✅ | [View](./Day-21-efs) |
 | 22 | AWS Backup | Automated backups for EC2 and EBS | ✅ | [View](./Day-22-aws-backup/) |
 | 23 | KMS | Customer-managed keys for encryption at rest | ✅ | [View](./Day-23-kms/) |
-| **24** | **Secrets Manager** | **Secure storage and retrieval of secrets** | **✅** | **[View](./Day-24-secrets-manager/)** |
+| 24 | Secrets Manage | Secure storage and retrieval of secrets | ✅ | [View](./Day-24-secrets-manager/) |
+| **25** | **SSM Parameter Store** | **Store configuration securely without hardcoding** | **✅** | **[View](./Day-25-ssm-parameter-store/)** |
 
 ---
 
@@ -91,7 +92,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 25** = SSM Parameter Store Config without hardcoding
+- **Day 26** = Systems Manager Session Manager (no SSH) 
 - Focus on reusable, production-grade infrastructure
 
 ---
