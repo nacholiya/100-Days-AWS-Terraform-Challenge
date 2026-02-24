@@ -71,7 +71,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 22 | AWS Backup | Automated backups for EC2 and EBS | ✅ | [View](./Day-22-aws-backup/) |
 | 23 | KMS | Customer-managed keys for encryption at rest | ✅ | [View](./Day-23-kms/) |
 | 24 | Secrets Manage | Secure storage and retrieval of secrets | ✅ | [View](./Day-24-secrets-manager/) |
-| **25** | **SSM Parameter Store** | **Store configuration securely without hardcoding** | **✅** | **[View](./Day-25-ssm-parameter-store/)** |
+| 25 | SSM Parameter Store | Store configuration securely without hardcoding | ✅ | [View](./Day-25-ssm-parameter-store) |
+| **26** | **Systems Manager** | **Secure EC2 access using Session Manager (no SSH)** | **✅** | **[View](./Day-26-ssm-session-manager)** |
 
 ---
 
@@ -92,7 +93,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 26** = Systems Manager Session Manager (no SSH) 
+- **Day 27** =  CloudTrail Account activity logging
 - Focus on reusable, production-grade infrastructure
 
 ---
