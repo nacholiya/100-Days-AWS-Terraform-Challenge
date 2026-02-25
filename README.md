@@ -72,7 +72,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 23 | KMS | Customer-managed keys for encryption at rest | ✅ | [View](./Day-23-kms/) |
 | 24 | Secrets Manage | Secure storage and retrieval of secrets | ✅ | [View](./Day-24-secrets-manager/) |
 | 25 | SSM Parameter Store | Store configuration securely without hardcoding | ✅ | [View](./Day-25-ssm-parameter-store) |
-| **26** | **Systems Manager** | **Secure EC2 access using Session Manager (no SSH)** | **✅** | **[View](./Day-26-ssm-session-manager)** |
+| 26 | Systems Manager | Secure EC2 access using Session Manager (no SSH | ✅ | [View](./Day-26-ssm-session-manager) |
+| **27** | **CloudTrail** | **Account activity logging with S3 storage** | **✅** | **[View](./Day-27-cloudtrail)** |
 
 ---
 
@@ -93,7 +94,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 27** =  CloudTrail Account activity logging
+- **Day 28** =  GaurdDuty Threat detection
 - Focus on reusable, production-grade infrastructure
 
 ---
