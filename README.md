@@ -74,7 +74,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 25 | SSM Parameter Store | Store configuration securely without hardcoding | ✅ | [View](./Day-25-ssm-parameter-store) |
 | 26 | Systems Manager | Secure EC2 access using Session Manager (no SSH | ✅ | [View](./Day-26-ssm-session-manager) |
 | 27 | CloudTrail | Account activity logging with S3 storage | ✅ | [View](./Day-27-cloudtrail) |
-| **28** | **GuardDuty** | **Threat detection & security findings** | **✅** | **[View](./Day-28-guardduty)** |
+| 28 | GuardDuty | Threat detection & security findings | ✅ | [View](./Day-28-guardduty) |
+| **29** | **VPC Flow Logs** | **Network traffic monitoring & visibility** | **⏳** | **[View](./Day-29-vpc-flow-logs)** |
 
 ---
 
@@ -95,7 +96,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 29** =  VPC Flow Logs Network traffic monitoring
+- **Day 30** =  AWS Config Resource compliance
 - Focus on reusable, production-grade infrastructure
 
 ---
