@@ -75,7 +75,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 26 | Systems Manager | Secure EC2 access using Session Manager (no SSH | ✅ | [View](./Day-26-ssm-session-manager) |
 | 27 | CloudTrail | Account activity logging with S3 storage | ✅ | [View](./Day-27-cloudtrail) |
 | 28 | GuardDuty | Threat detection & security findings | ✅ | [View](./Day-28-guardduty) |
-| **29** | **VPC Flow Logs** | **Network traffic monitoring & visibility** | **✅** | **[View](./Day-29-vpc-flow-logs)** |
+| 29 | VPC Flow Logs | Network traffic monitoring & visibility | ✅ | [View](./Day-29-vpc-flow-logs) |
+| **30** | **AWS Config** | **Resource compliance & configuration tracking** | **✅** | **[View](./Day-30-aws-config)** |
 
 ---
 
@@ -96,7 +97,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 30** =  AWS Config Resource compliance
+- **Day 31** = Terraform Variables Inputs, defaults, Validation
 - Focus on reusable, production-grade infrastructure
 
 ---
