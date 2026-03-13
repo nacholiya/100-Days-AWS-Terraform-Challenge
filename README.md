@@ -72,12 +72,12 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 23 | KMS | Customer-managed keys for encryption at rest | ✅ | [View](./Day-23-kms/) |
 | 24 | Secrets Manage | Secure storage and retrieval of secrets | ✅ | [View](./Day-24-secrets-manager/) |
 | 25 | SSM Parameter Store | Store configuration securely without hardcoding | ✅ | [View](./Day-25-ssm-parameter-store) |
-| 26 | Systems Manager | Secure EC2 access using Session Manager (no SSH | ✅ | [View](./Day-26-ssm-session-manager) |
+| 26 | Systems Manager | Secure EC2 access using Session Manager (no SSH) | ✅ | [View](./Day-26-ssm-session-manager) |
 | 27 | CloudTrail | Account activity logging with S3 storage | ✅ | [View](./Day-27-cloudtrail) |
 | 28 | GuardDuty | Threat detection & security findings | ✅ | [View](./Day-28-guardduty) |
 | 29 | VPC Flow Logs | Network traffic monitoring & visibility | ✅ | [View](./Day-29-vpc-flow-logs) |
-| **30** | **AWS Config** | **Resource compliance & configuration tracking** | **✅** | **[View](./Day-30-aws-config)** |
-
+| 30 | AWS Config | Resource compliance & configuration tracking | ✅ | [View](./Day-30-aws-config) |
+| **31** | **Terraform Variables** | **Inputs, defaults and validation rules** | **✅** | **[View](./Day-31-terraform-variables)** |
 ---
 
 ## 🚀 How to Use
@@ -97,7 +97,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 31** = Terraform Variables Inputs, defaults, Validation
+- **Day 32** = Terraform Outputs Cross-stack usage
 - Focus on reusable, production-grade infrastructure
 
 ---
