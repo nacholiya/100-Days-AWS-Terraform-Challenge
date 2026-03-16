@@ -77,7 +77,9 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 28 | GuardDuty | Threat detection & security findings | ✅ | [View](./Day-28-guardduty) |
 | 29 | VPC Flow Logs | Network traffic monitoring & visibility | ✅ | [View](./Day-29-vpc-flow-logs) |
 | 30 | AWS Config | Resource compliance & configuration tracking | ✅ | [View](./Day-30-aws-config) |
-| **31** | **Terraform Variables** | **Inputs, defaults and validation rules** | **✅** | **[View](./Day-31-terraform-variables)** |
+| 31 | Terraform Variables | Inputs, defaults and validation rules | ✅ | [View](./Day-31-terraform-variables) |
+| **32** | **Terraform Outputs** | **Create and use Terraform outputs for cross-stack infrastructure** | **✅** | **[View](./Day-32-terraform-outputs)** |
+
 ---
 
 ## 🚀 How to Use
@@ -97,7 +99,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 32** = Terraform Outputs Cross-stack usage
+- **Day 33** = Terraform State Local vs Remote State
 - Focus on reusable, production-grade infrastructure
 
 ---
