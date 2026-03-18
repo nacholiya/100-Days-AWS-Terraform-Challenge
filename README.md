@@ -79,7 +79,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 30 | AWS Config | Resource compliance & configuration tracking | ✅ | [View](./Day-30-aws-config) |
 | 31 | Terraform Variables | Inputs, defaults and validation rules | ✅ | [View](./Day-31-terraform-variables) |
 | 32 | Terraform Outputs | Create and use Terraform outputs for cross-stack infrastructure | ✅ | [View](./Day-32-terraform-outputs) |
-| **33** | **Terraform State** | **Local state management and drift detection** | **✅** | **[View](./Day-33-terraform-state)** |
+| 33 | Terraform State | Local state management and drift detection | ✅ | [View](./Day-33-terraform-state) |
+| **34** | **Terraform Backend** | **Remote state with S3 + DynamoDB locking** | **✅** | **[View](./Day-34-terraform-backend)** |
 
 ---
 
@@ -100,7 +101,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 34** = Terraform Backend S3 Backend + DynamoDB Lock
+- **Day 35** =  Terraform Workspaces  Dev/Stage/Prod
 - Focus on reusable, production-grade infrastructure
 
 ---
