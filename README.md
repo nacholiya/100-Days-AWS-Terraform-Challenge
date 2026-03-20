@@ -81,7 +81,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 32 | Terraform Outputs | Create and use Terraform outputs for cross-stack infrastructure | ✅ | [View](./Day-32-terraform-outputs) |
 | 33 | Terraform State | Local state management and drift detection | ✅ | [View](./Day-33-terraform-state) |
 | 34 | Terraform Backend | Remote state with S3 + DynamoDB locking | ✅ | [View](./Day-34-terraform-backend) |
-| **35** | **Terraform Workspaces** | **Multi-environment infra (dev/stage/prod)** | **✅** | **[View](./Day-35-workspaces)** |
+| 35 | Terraform Workspaces | Multi-environment infra (dev/stage/prod) | ✅ | [View](./Day-35-workspaces) |
+| **36** | **Terraform Modules** | **Reusable VPC module** | **✅** | **[View](./Day-36-vpc-module)** |
 
 ---
 
@@ -102,7 +103,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 36** =  Terraform Modules Reusable VPC Module
+- **Day 37** =  Terraform Modules EC2 & ALB Modules
 - Focus on reusable, production-grade infrastructure
 
 ---
