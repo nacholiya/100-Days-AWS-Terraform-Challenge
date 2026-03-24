@@ -83,7 +83,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 34 | Terraform Backend | Remote state with S3 + DynamoDB locking | ✅ | [View](./Day-34-terraform-backend) |
 | 35 | Terraform Workspaces | Multi-environment infra (dev/stage/prod) | ✅ | [View](./Day-35-workspaces) |
 | 36 | Terraform Modules | Reusable VPC module | ✅ | [View](./Day-36-vpc-module) |
-| **37** | **Terraform Modules** | **EC2 & ALB modular infrastructure** | **✅** | **[View](./Day-37-terraform-modules/)** |
+| 37 | Terraform Modules | EC2 & ALB modular infrastructure | ✅ | [View](./Day-37-terraform-modules) |
+| **38** | **Terraform Functions** | **for_each, count, dynamic blocks** | **✅** | **[View](./Day-38-functions)** |
 
 ---
 
@@ -104,7 +105,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 38** =  Terraform Functions  for_each, count, dynamic
+- **Day 39** =  Terraform Lifecycle  create_before_destroy
 - Focus on reusable, production-grade infrastructure
 
 ---
