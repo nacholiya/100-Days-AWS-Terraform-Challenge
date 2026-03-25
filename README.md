@@ -84,7 +84,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 35 | Terraform Workspaces | Multi-environment infra (dev/stage/prod) | ✅ | [View](./Day-35-workspaces) |
 | 36 | Terraform Modules | Reusable VPC module | ✅ | [View](./Day-36-vpc-module) |
 | 37 | Terraform Modules | EC2 & ALB modular infrastructure | ✅ | [View](./Day-37-terraform-modules) |
-| **38** | **Terraform Functions** | **for_each, count, dynamic blocks** | **✅** | **[View](./Day-38-functions)** |
+| 38 | Terraform Functions | for_each, count, dynamic blocks | ✅ | [View](./Day-38-functions) |
+| **39** | **Terraform Lifecycle** | **Safe updates & zero-downtime deployments** | **✅** | **[View](./Day-39-lifecycle)** |
 
 ---
 
@@ -105,7 +106,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 39** =  Terraform Lifecycle  create_before_destroy
+- **Day 40** =  Terraform Import  Import Existing AWS_Resource
 - Focus on reusable, production-grade infrastructure
 
 ---
