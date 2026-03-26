@@ -85,7 +85,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 36 | Terraform Modules | Reusable VPC module | ✅ | [View](./Day-36-vpc-module) |
 | 37 | Terraform Modules | EC2 & ALB modular infrastructure | ✅ | [View](./Day-37-terraform-modules) |
 | 38 | Terraform Functions | for_each, count, dynamic blocks | ✅ | [View](./Day-38-functions) |
-| **39** | **Terraform Lifecycle** | **Safe updates & zero-downtime deployments** | **✅** | **[View](./Day-39-lifecycle)** |
+| 39 | Terraform Lifecycle | Safe updates & zero-downtime deployments | ✅ | [View](./Day-39-lifecycle) |
+| **40** | **Terraform Import** | **Manage existing AWS resources using Terraform** | **✅** | **[View](./Day-40-import)** |
 
 ---
 
@@ -106,7 +107,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 40** =  Terraform Import  Import Existing AWS_Resource
+- **Day 41** =  Terraform Graph   Dependency Visualization
 - Focus on reusable, production-grade infrastructure
 
 ---
