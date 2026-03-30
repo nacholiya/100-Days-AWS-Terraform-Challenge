@@ -86,7 +86,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 37 | Terraform Modules | EC2 & ALB modular infrastructure | ✅ | [View](./Day-37-terraform-modules) |
 | 38 | Terraform Functions | for_each, count, dynamic blocks | ✅ | [View](./Day-38-functions) |
 | 39 | Terraform Lifecycle | Safe updates & zero-downtime deployments | ✅ | [View](./Day-39-lifecycle) |
-| **40** | **Terraform Import** | **Manage existing AWS resources using Terraform** | **✅** | **[View](./Day-40-import)** |
+| 40 | Terraform Import | Manage existing AWS resources using Terraform | ✅ | [View](./Day-40-import) |
+| **41** | **Terraform Graph** | **Visualizing resource dependencies using implicit & explicit dependencies** | **✅** | **[View](./Day-41-terraform-graph)** |
 
 ---
 
@@ -107,7 +108,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 41** =  Terraform Graph   Dependency Visualization
+- **Day 42** =  Terraform Testing  Validate, Plan, FMT
 - Focus on reusable, production-grade infrastructure
 
 ---
