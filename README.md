@@ -87,7 +87,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 38 | Terraform Functions | for_each, count, dynamic blocks | ✅ | [View](./Day-38-functions) |
 | 39 | Terraform Lifecycle | Safe updates & zero-downtime deployments | ✅ | [View](./Day-39-lifecycle) |
 | 40 | Terraform Import | Manage existing AWS resources using Terraform | ✅ | [View](./Day-40-import) |
-| **41** | **Terraform Graph** | **Visualizing resource dependencies using implicit & explicit dependencies** | **✅** | **[View](./Day-41-terraform-graph)** |
+| 41 | Terraform Graph | Visualizing resource dependencies using implicit & explicit dependencies | ✅ | [View](./Day-41-terraform-graph) |
+| **42** | **Terraform Testing** | **validate, fmt, plan workflow** | **✅** | **[View](./Day-42-testing)** |
 
 ---
 
@@ -108,7 +109,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 42** =  Terraform Testing  Validate, Plan, FMT
+- **Day 43** =  GitHub Actions Terraform CI Pipeline
 - Focus on reusable, production-grade infrastructure
 
 ---
