@@ -3,7 +3,7 @@ data "aws_caller_identity" "current" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket        = "s3-bucket-for-cloudtrail-logs-1808"
+  bucket = "s3-bucket-for-cloudtrail-logs-1808"
 
   tags = {
     Name = "day-27-s3-bucket"

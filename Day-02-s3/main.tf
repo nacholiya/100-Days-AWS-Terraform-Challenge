@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "challenge_bucket" {
   bucket = var.bucket_name
 
   tags = {
-    Name = "day-02-s3-bucket"
+    Name        = "day-02-s3-bucket"
     Environment = "learning"
     Project     = "100-days-terraform"
   }
