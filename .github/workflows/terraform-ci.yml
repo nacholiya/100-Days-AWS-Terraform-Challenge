@@ -28,6 +28,7 @@ jobs:
           do
             (cd "$dir" && terraform init -backend=false)
           done
+          cd -
 
       - name: Terraform Validate
         run: |
