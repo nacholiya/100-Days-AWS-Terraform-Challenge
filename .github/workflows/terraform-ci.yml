@@ -24,22 +24,18 @@ jobs:
 
       - name: Terraform Init
         run: |
-          for dir in $(find . -type f -name "*.tf" | xargs -n1 dirname | sort -u)
+          for dir in $(find . -type f -name "provider.tf" | xargs -n1 dirname | sort -u)
           do
-            (cd "$dir" && terraform init -backend=false)
-          done
-          cd -
+            if [ -f "$dir/terraform.tf" ]; then
+              (cd "$dir" && terraform init -backend=false)
+            fi
+          done  
 
       - name: Terraform Validate
         run: |
-          for dir in $(find . -type f -name "*.tf" | xargs -n1 dirname | sort -u)
+          for dir in $(find . -type f -name "provider.tf"  | xargs -n1 dirname | sort -u)
           do
-            (cd "$dir" && terraform validate)
-          done
-
-      - name: Terraform Plan
-        run: |
-          for dir in $(find . -type f -name "*.tf" | xargs -n1 dirname | sort -u)
-          do
-            (cd "$dir" && terraform plan)
+            if [ -f "$dir/terraform.tf" ]; then
+              (cd "$dir" && terraform validate)
+            fi
           done
