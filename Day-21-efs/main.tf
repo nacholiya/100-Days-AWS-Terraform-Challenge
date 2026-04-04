@@ -115,7 +115,7 @@ resource "aws_instance" "ec2_instance_2" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.public_subnet_2.id
   vpc_security_group_ids      = [aws_security_group.ec2_sg.id]
-  key_name                    = aws_key_pair.key_pair.key_name
+  key_name                    = var.create_key_pair ? aws_key_pair.key_pair[0].key_name : null
   associate_public_ip_address = true
   user_data = templatefile("${path.module}/user-data-2.sh", {
     efs_dns = aws_efs_file_system.efs.dns_name
