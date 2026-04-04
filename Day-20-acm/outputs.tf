@@ -53,5 +53,5 @@ output "ec2_public_ip" {
 
 output "acm_certificate_arn" {
   description = "ARN of imported ACM certificate"
-  value       = aws_acm_certificate.import_cert.arn
+  value       = var.create_certificate ? aws_acm_certificate.import_cert[0].arn : null
 }

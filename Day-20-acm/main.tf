@@ -166,7 +166,7 @@ resource "aws_lb_listener" "https_listner" {
   port              = 443
   protocol          = "HTTPS"
   ssl_policy        = "ELBSecurityPolicy-2016-08"
-  certificate_arn   = aws_acm_certificate.import_cert.arn
+  certificate_arn   = var.create_certificate ? aws_acm_certificate.import_cert[0].arn : null
 
   default_action {
     type             = "forward"
