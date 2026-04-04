@@ -1,6 +1,6 @@
 ##Creating KeyPair
 resource "aws_key_pair" "tf-key" {
-  count = var.create_key_pair ? 1 : 0
+  count      = var.create_key_pair ? 1 : 0
   key_name   = "tf-keypair"
   public_key = file("tf-keypair.pub")
 }

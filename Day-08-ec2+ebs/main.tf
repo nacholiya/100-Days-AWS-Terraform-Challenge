@@ -1,6 +1,6 @@
 ##Creating SSH Key-Pair
 resource "aws_key_pair" "tf_key_pair" {
-  count = var.create_key_pair ? 1 : 0
+  count      = var.create_key_pair ? 1 : 0
   key_name   = "tf-key-pair"
   public_key = file("tf-key-pair.pub")
 }

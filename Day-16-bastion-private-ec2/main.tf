@@ -156,7 +156,7 @@ resource "aws_security_group" "private_ec2_sg" {
 
 ##Key Pair for SSH
 resource "aws_key_pair" "bastion_key" {
-  count = var.create_key_pair ? 1 : 0
+  count      = var.create_key_pair ? 1 : 0
   key_name   = "day-16-key-pair"
   public_key = file("day-16-key-pair.pub")
 }
