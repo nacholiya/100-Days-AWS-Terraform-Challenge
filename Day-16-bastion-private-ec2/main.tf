@@ -109,7 +109,7 @@ resource "aws_security_group" "bastion_sg" {
   vpc_id      = aws_vpc.main.id
 
   ingress {
-    cidr_blocks = ["YOUR IP"]
+    cidr_blocks = [var.your_ip]
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
