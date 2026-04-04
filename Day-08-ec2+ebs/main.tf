@@ -1,5 +1,6 @@
 ##Creating SSH Key-Pair
 resource "aws_key_pair" "tf_key_pair" {
+  count = var.create_key_pair ? 1 : 0
   key_name   = "tf-key-pair"
   public_key = file("tf-key-pair.pub")
 }
@@ -84,7 +85,7 @@ resource "aws_security_group" "tf_ec2_sg" {
 resource "aws_instance" "tf_ec2" {
   ami                    = "ami-019715e0d74f695be" ##Ubuntu
   instance_type          = "t3.micro"
-  key_name               = aws_key_pair.tf_key_pair.key_name
+  key_name               = var.create_key_pair ? aws_key_pair.tf_key_pair[0].key_name : null
   subnet_id              = aws_subnet.tf_pb_subnet.id
   vpc_security_group_ids = [aws_security_group.tf_ec2_sg.id]
   user_data              = base64encode(file("user-data.sh"))

@@ -84,6 +84,7 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 resource "aws_key_pair" "key_pair" {
+  count = var.create_key_pair ? 1 : 0
   key_name   = "day-21-key-pair"
   public_key = file("day21-key.pub")
 
@@ -97,7 +98,7 @@ resource "aws_instance" "ec2_instance" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.public_subnet_1.id
   vpc_security_group_ids      = [aws_security_group.ec2_sg.id]
-  key_name                    = aws_key_pair.key_pair.key_name
+  key_name                    = var.create_key_pair ? aws_key_pair.key_pair[0].key_name : null
   associate_public_ip_address = true
   user_data = templatefile("${path.module}/user-data-1.sh",
     {

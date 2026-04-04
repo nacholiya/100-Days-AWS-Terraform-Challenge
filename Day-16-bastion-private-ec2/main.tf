@@ -156,6 +156,7 @@ resource "aws_security_group" "private_ec2_sg" {
 
 ##Key Pair for SSH
 resource "aws_key_pair" "bastion_key" {
+  count = var.create_key_pair ? 1 : 0
   key_name   = "day-16-key-pair"
   public_key = file("day-16-key-pair.pub")
 }
@@ -166,7 +167,7 @@ resource "aws_instance" "bastion" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.public.id
   vpc_security_group_ids      = [aws_security_group.bastion_sg.id]
-  key_name                    = aws_key_pair.bastion_key.key_name
+  key_name                    = var.create_key_pair ? aws_key_pair.bastion_key[0].key_name : null
   associate_public_ip_address = true
 
   tags = {

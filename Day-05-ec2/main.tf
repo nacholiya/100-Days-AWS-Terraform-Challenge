@@ -1,5 +1,6 @@
 ##Creating KeyPair
 resource "aws_key_pair" "tf-key" {
+  count = var.create_key_pair ? 1 : 0
   key_name   = "tf-keypair"
   public_key = file("tf-keypair.pub")
 }
@@ -88,7 +89,7 @@ resource "aws_security_group" "tf-sg" {
 resource "aws_instance" "tf-ec2" {
   ami                    = "ami-019715e0d74f695be" ##Ubuntu
   instance_type          = "t3.micro"
-  key_name               = aws_key_pair.tf-key.key_name
+  key_name               = var.create_key_pair ? aws_key_pair.tf-key[0].key_name : null
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.tf-sg.id]
 

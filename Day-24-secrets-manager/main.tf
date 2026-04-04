@@ -65,6 +65,7 @@ resource "aws_iam_instance_profile" "instance_profile" {
 }
 
 resource "aws_key_pair" "key_pair" {
+  count = var.create_key_pair ? 1 : 0
   key_name   = "day-24-key-pair"
   public_key = file("day-24-key-pair.pub")
 }
@@ -156,7 +157,7 @@ resource "aws_instance" "ec2" {
   vpc_security_group_ids      = [aws_security_group.ec2_sg.id]
   iam_instance_profile        = aws_iam_instance_profile.instance_profile.name
   associate_public_ip_address = true
-  key_name                    = aws_key_pair.key_pair.key_name
+  key_name                    = var.create_key_pair ? aws_key_pair.key_pair[0].key_name : null
 
   tags = {
     Name = "day-24-ec2-instance"
