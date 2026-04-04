@@ -2,7 +2,7 @@
 resource "aws_key_pair" "tf-key" {
   count      = var.create_key_pair ? 1 : 0
   key_name   = "tf-keypair"
-  public_key = file("tf-keypair.pub")
+  public_key = var.create_key_pair ? file("tf-keypair.pub") : null
 }
 
 ##Creating Virual Private Cloud ( VPC )

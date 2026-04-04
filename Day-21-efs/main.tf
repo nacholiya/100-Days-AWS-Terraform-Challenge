@@ -86,7 +86,7 @@ resource "aws_security_group" "ec2_sg" {
 resource "aws_key_pair" "key_pair" {
   count      = var.create_key_pair ? 1 : 0
   key_name   = "day-21-key-pair"
-  public_key = file("day21-key.pub")
+  public_key = var.create_key_pair ? file("day21-key.pub") : null
 
   tags = {
     Name = "day-21-key-pair"
