@@ -8,7 +8,7 @@ output "public_subnet_id" {
   description = "ID of the public subnet where the EC2 instance is deployed"
 }
 
-output "sg_id" {
-  value       = aws_security_group.tf-sg.id
-  description = "ID of the security group attached to the EC2 instance"
-}
+# output "sg_id" {
+#   value       = aws_security_group.tf-sg.id
+#   description = "ID of the security group attached to the EC2 instance"
+# }
