@@ -194,6 +194,8 @@ resource "aws_lb_target_group_attachment" "tg_attach" {
 }
 
 resource "aws_acm_certificate" "import_cert" {
-  private_key      = file("${path.module}/private.key")
-  certificate_body = file("${path.module}/certificate.crt")
+  count = var.create_certificate ? 1 : 0
+
+  private_key      = var.create_certificate ? file("${path.module}/private.key") : null
+  certificate_body = var.create_certificate ? file("${path.module}/certificate.crt") : null
 }
