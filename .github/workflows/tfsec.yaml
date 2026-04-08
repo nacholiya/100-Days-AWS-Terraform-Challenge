@@ -1,0 +1,36 @@
+name: Terraform Security Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tfsec:
+    name: Run tfsec Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run tfsec
+        uses: aquasecurity/tfsec-action@v1.0.3
+        with:
+          soft_fail: false
+          working_directory: .
+          additional_args: >
+            --exclude-path .terraform
+            --exclude-path **/*.tfstate
+            --exclude-path **/*.tfstate.backup
+            --minimum-severity CRITICAL
+            --format sarif
+            --out tfsec.sarif
+
+      - name: Upload tfsec results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: tfsec.sarif
