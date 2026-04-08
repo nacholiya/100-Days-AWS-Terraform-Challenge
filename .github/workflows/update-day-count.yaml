@@ -16,15 +16,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Count Completed Days
+      - name: Fetch all tags
+        run: git fetch --tags
+
+      - name: Get Latest Day from Tags
         id: count
         run: |
-          COUNT=$(find . -maxdepth 1 -type d -name "Day-*" | wc -l)
+          COUNT=$(git tag | sort -V | tail -n 1 | sed "s/day-//")
           echo "day_count=$COUNT" >> $GITHUB_OUTPUT
 
       - name: Update README Day Count
         run: |
-          sed -i -E "s/Day [0-9]+ \/ 100/Day ${{ steps.count.outputs.day_count }} \/ 100/g" README.md
+          COUNT=${{ steps.count.outputs.day_count }}
+          if [ -n "$COUNT" ]; then
+            sed -i -E "s/Day [0-9]+ \/ 100/Day ${COUNT} \/ 100/g" README.md
+          fi
 
       - name: Commit README Update
         run: |
