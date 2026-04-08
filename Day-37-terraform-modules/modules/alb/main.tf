@@ -14,6 +14,7 @@ resource "aws_lb_target_group" "this" {
   target_type = "instance"
 }
 
+#tfsec:ignore:aws-elb-http-not-used Reason: HTTPS configured in later stages
 resource "aws_lb_listener" "this" {
   load_balancer_arn = aws_lb.this.arn
   port              = var.port

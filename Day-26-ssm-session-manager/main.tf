@@ -49,6 +49,7 @@ resource "aws_security_group" "ec2_sg" {
   name   = "ec2-sg"
   vpc_id = aws_vpc.main.id
 
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr Reason: Required for SSM Session Manager communication with AWS services
   egress {
     from_port   = 0
     to_port     = 0

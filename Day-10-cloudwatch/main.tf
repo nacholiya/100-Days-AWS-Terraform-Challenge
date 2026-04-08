@@ -116,9 +116,10 @@ resource "aws_security_group" "ec2_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/16"]
   }
 
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr Reason: EC2 requires outbound internet for updates and CloudWatch agent
   egress {
     from_port   = 0
     to_port     = 0

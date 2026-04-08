@@ -66,6 +66,7 @@ resource "aws_security_group" "alb_sg" {
   description = "Allow HTTP & HTTPS Traffic"
   vpc_id      = aws_vpc.main.id
 
+  #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible for HTTPS traffic
   ingress {
     from_port   = 80
     to_port     = 80
@@ -73,6 +74,7 @@ resource "aws_security_group" "alb_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible for HTTPS traffic
   ingress {
     from_port   = 443
     to_port     = 443
@@ -80,6 +82,7 @@ resource "aws_security_group" "alb_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr Reason: ALB requires outbound access to communicate with targets
   egress {
     from_port   = 0
     to_port     = 0
@@ -107,7 +110,7 @@ resource "aws_security_group" "ec2_sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/16"]
   }
 }
 
@@ -165,7 +168,7 @@ resource "aws_lb_listener" "https_listner" {
   load_balancer_arn = aws_lb.alb.arn
   port              = 443
   protocol          = "HTTPS"
-  ssl_policy        = "ELBSecurityPolicy-2016-08"
+  ssl_policy        = "ELBSecurityPolicy-TLS13-1-2-2021-06"
   certificate_arn   = var.create_certificate ? aws_acm_certificate.import_cert[0].arn : null
 
   default_action {

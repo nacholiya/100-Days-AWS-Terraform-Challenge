@@ -66,12 +66,16 @@ resource "aws_route_table_association" "public_association" {
 resource "aws_security_group" "tf_sg_alb" {
   name   = "tf-sg-alb"
   vpc_id = aws_vpc.tf_vpc.id
+
+  #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible
   ingress {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr
   egress {
     from_port   = 0
     to_port     = 0
@@ -94,6 +98,8 @@ resource "aws_security_group" "tf_sg_ec2" {
     protocol        = "tcp"
     security_groups = [aws_security_group.tf_sg_alb.id]
   }
+
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr
   egress {
     from_port   = 0
     to_port     = 0
@@ -156,6 +162,7 @@ resource "aws_lb" "tf_alb" {
 }
 
 ##Creating ALB Listner
+#tfsec:ignore:aws-elb-http-not-used Reason: This is a demo environment and we are using HTTP for simplicity. In production, HTTPS should be used.
 resource "aws_lb_listener" "tf_alb_listner" {
   depends_on = [aws_lb.tf_alb]
 

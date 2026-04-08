@@ -79,21 +79,22 @@ resource "aws_security_group" "tf_asg_ec2_sg" {
   vpc_id      = aws_vpc.tf_vpc.id
 
   ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-    description = "Allows HTTP"
+    from_port       = 80
+    to_port         = 80
+    protocol        = "tcp"
+    security_groups = [aws_security_group.tf_alb_sg.id]
+    description     = "Allow HTTP from ALB only"
   }
 
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/16"]
     description = "Allow SSH"
   }
 
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr
   egress {
     from_port   = 0
     to_port     = 0
@@ -112,6 +113,7 @@ resource "aws_security_group" "tf_alb_sg" {
   vpc_id      = aws_vpc.tf_vpc.id
   description = "Security Group for APPlication Load Balancer"
 
+  #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible
   ingress {
     from_port   = 80
     to_port     = 80
@@ -120,6 +122,7 @@ resource "aws_security_group" "tf_alb_sg" {
     description = "Allow HTTP"
   }
 
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr Reason: ALB requires outbound internet access for communication
   egress {
     from_port   = 0
     to_port     = 0
@@ -171,6 +174,7 @@ resource "aws_lb_target_group" "tf_alb_tg" {
 }
 
 ##Creating ALB Listner
+#tfsec:ignore:aws-elb-http-not-used Reason: This is a demo environment and we are using HTTP for simplicity. In production, HTTPS should be used for secure communication.
 resource "aws_lb_listener" "tf_alb_listner" {
   load_balancer_arn = aws_lb.tf_asg_alb.arn
   port              = 80

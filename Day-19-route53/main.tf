@@ -66,6 +66,7 @@ resource "aws_security_group" "alb_sg" {
   description = "Allow HTTP Traffic"
   vpc_id      = aws_vpc.main.id
 
+  #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible for Route53 traffic
   ingress {
     from_port   = 80
     to_port     = 80
@@ -73,6 +74,7 @@ resource "aws_security_group" "alb_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr Reason: ALB requires outbound access to communicate with targets
   egress {
     from_port   = 0
     to_port     = 0
@@ -117,6 +119,7 @@ resource "aws_lb_target_group" "app_tg" {
   }
 }
 
+#tfsec:ignore:aws-elb-http-not-used Reason: This is a demo environment and we are using HTTP for simplicity. In production, HTTPS should be used for secure communication.
 resource "aws_lb_listener" "http_listener" {
   load_balancer_arn = aws_lb.app_alb.arn
   port              = 80

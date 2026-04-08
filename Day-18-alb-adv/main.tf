@@ -58,6 +58,7 @@ resource "aws_security_group" "alb_sg" {
   vpc_id = aws_vpc.main.id
 
   ##Inbound Rule
+  #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible to serve web traffic
   ingress {
     cidr_blocks = ["0.0.0.0/0"]
     from_port   = 80
@@ -66,6 +67,7 @@ resource "aws_security_group" "alb_sg" {
   }
 
   ##Outbound Rule
+  #tfsec:ignore:aws-ec2-no-public-egress-sgr Reason: ALB requires outbound access to communicate with targets
   egress {
     cidr_blocks = ["0.0.0.0/0"]
     from_port   = 0
@@ -93,7 +95,7 @@ resource "aws_security_group" "ec2_sg" {
 
   ##Outbound Rule
   egress {
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/16"]
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
@@ -157,6 +159,7 @@ resource "aws_lb" "alb" {
 }
 
 ##Creating ALB Listener
+#tfsec:ignore:aws-elb-http-not-used Reason: This is a demo environment and we are using HTTP for simplicity. In production, HTTPS should be used for secure communication.
 resource "aws_lb_listener" "alb_listener" {
   depends_on = [aws_lb.alb]
 
