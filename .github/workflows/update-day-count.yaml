@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: update-day-count
+  cancel-in-progress: true
+
 jobs:
   update-day-count:
     runs-on: ubuntu-latest

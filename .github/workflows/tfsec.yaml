@@ -12,6 +12,10 @@ permissions:
   contents: read
   security-events: write
 
+concurrency:
+  group: tfsec-scan
+  cancel-in-progress: true
+
 jobs:
   tfsec:
     name: Run tfsec Security Scan
