@@ -1,45 +1,50 @@
-name: Update Day Count
+  name: Update Day Count
 
-permissions:
-  contents: write
+  permissions:
+    contents: write
 
-on:
-  push:
-    branches:
-      - main
+  on:
+    push:
+      tags:
+        - "day-*"
 
-concurrency:
-  group: update-day-count
-  cancel-in-progress: true
+  concurrency:
+    group: update-day-count
+    cancel-in-progress: true
 
-jobs:
-  update-day-count:
-    runs-on: ubuntu-latest
+  jobs:
+    update-day-count:
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
 
-      - name: Fetch all tags
-        run: git fetch --tags
+        - name: Fetch all tags
+          run: git fetch --tags
 
-      - name: Get Latest Day from Tags
-        id: count
-        run: |
-          COUNT=$(git tag | sort -V | tail -n 1 | sed "s/day-//")
-          echo "day_count=$COUNT" >> $GITHUB_OUTPUT
+        - name: Get Latest Day from Tags
+          id: count
+          run: |
+            COUNT=$(git tag | sort -V | tail -n 1 | sed "s/day-//")
+            echo "day_count=$COUNT" >> $GITHUB_OUTPUT
 
-      - name: Update README Day Count
-        run: |
-          COUNT=${{ steps.count.outputs.day_count }}
-          if [ -n "$COUNT" ]; then
-            sed -i -E "s/Day [0-9]+ \/ 100/Day ${COUNT} \/ 100/g" README.md
-          fi
+        - name: Update README Day Count
+          run: |
+            COUNT=${{ steps.count.outputs.day_count }}
+            if [ -n "$COUNT" ]; then
+              sed -i -E "s/Day [0-9]+ \/ 100/Day ${COUNT} \/ 100/g" README.md
+            fi
 
-      - name: Commit README Update
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "chore: update day count" || echo "No changes to commit"
-          git push
+        - name: Commit README Update
+          run: |
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            
+            if git diff --cached --quiet; then
+              echo "No changes to commit"
+            else
+              git commit -m "Update Day Count to ${{ steps.count.outputs.day_count }}"
+              git push origin main
+            fi
