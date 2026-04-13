@@ -4,9 +4,9 @@
 
 
 **Progress:** Day 45 / 100 🚀 &nbsp;
-![Terraform](https://img.shields.io/badge/Terraform-IaC-purple)
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
-![Status](https://img.shields.io/badge/Consistency-Daily%20Push-success)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?style=for-the-badge)
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Consistency-Daily%20Push-success?style=for-the-badge)
 
 📅 **Start Date:** 13 Jan 2026  
 🛑 **Break Days:** Saturday & Sunday (No tasks)  
@@ -88,7 +88,10 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 39 | Terraform Lifecycle | Safe updates & zero-downtime deployments | ✅ | [View](./Day-39-lifecycle) |
 | 40 | Terraform Import | Manage existing AWS resources using Terraform | ✅ | [View](./Day-40-import) |
 | 41 | Terraform Graph | Visualizing resource dependencies using implicit & explicit dependencies | ✅ | [View](./Day-41-terraform-graph) |
-| **42** | **Terraform Testing** | **validate, fmt, plan workflow** | **✅** | **[View](./Day-42-testing)** |
+| 42 | Terraform Testing | Validate, Fmt, Plan Workflow | ✅ | [View](./Day-42-testing) |
+| 43 | GitHub Actions | Terraform CI pipeline ( fmt check, init, validate ) | ✅ | [View](./.github/workflows/terraform-ci.yml) |
+| 44 | Terraform Security | tfsec scanning for IaC security | ✅ | [View](./Day-44-security) |
+| **45** | **Cost Optimization** | **AWS Budgets and cost alerts** | **✅** | **[View](./Day-45-cost)** |
 
 ---
 
@@ -109,7 +112,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 43** =  GitHub Actions Terraform CI Pipeline
+- **Day 46** =  S3 Advanced Lifecycle, Intelligent Tiering
 - Focus on reusable, production-grade infrastructure
 
 ---
