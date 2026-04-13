@@ -46,5 +46,5 @@
               echo "No changes to commit"
             else
               git commit -m "Update Day Count to ${{ steps.count.outputs.day_count }}"
-              git push origin main
+              git push origin HEAD:main
             fi
