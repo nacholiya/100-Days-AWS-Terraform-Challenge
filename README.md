@@ -91,7 +91,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 42 | Terraform Testing | Validate, Fmt, Plan Workflow | ✅ | [View](./Day-42-testing) |
 | 43 | GitHub Actions | Terraform CI pipeline ( fmt check, init, validate ) | ✅ | [View](./.github/workflows/terraform-ci.yml) |
 | 44 | Terraform Security | tfsec scanning for IaC security | ✅ | [View](./Day-44-security) |
-| **45** | **Cost Optimization** | **AWS Budgets and cost alerts** | **✅** | **[View](./Day-45-cost)** |
+| 45 | Cost Optimization | AWS Budgets and cost alerts | ✅ | [View](./Day-45-cost) |
+| **46** | **S3 Advanced** | **Lifecycle rules & intelligent tiering** | **✅** | **[View](./Day-46-s3-advanced)** |
 
 ---
 
@@ -112,7 +113,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 46** =  S3 Advanced Lifecycle, Intelligent Tiering
+- **Day 47** =  S3 Access Logs Logging & Audit
 - Focus on reusable, production-grade infrastructure
 
 ---
