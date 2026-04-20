@@ -75,3 +75,9 @@ resource "aws_s3_bucket_policy" "s3_bucket_policy" {
     }
   ))
 }
+
+resource "null_resource" "cloudfront_invalidation" {
+  provisioner "local-exec" {
+    command = "aws cloudfront create-invalidation --distribution-id ${aws_cloudfront_distribution.s3_distribution.id} --paths '/*'"
+  }
+}

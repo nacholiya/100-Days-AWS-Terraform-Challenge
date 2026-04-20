@@ -7,3 +7,7 @@ output "s3_bucket_name" {
   description = "S3 Bucket Name"
   value       = aws_s3_bucket.bucket.bucket
 }
+
+output "cloudfront_distribution_id" {
+  value = aws_cloudfront_distribution.s3_distribution.id
+}
