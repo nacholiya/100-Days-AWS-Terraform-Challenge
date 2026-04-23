@@ -35,13 +35,15 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     allowed_methods          = ["GET", "HEAD"]
     cached_methods           = ["GET", "HEAD"]
     target_origin_id         = "s3-origin"
-    viewer_protocol_policy   = "allow-all"
+    viewer_protocol_policy   = "redirect-to-https"
     cache_policy_id          = "658327ea-f89d-4fab-a63d-7e88639e58f6" # CachingOptimized
     origin_request_policy_id = "88a5eaf4-2fd4-4709-b370-b4c650ea3fcf" # CORS-S3Origin
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = data.aws_acm_certificate.certificate.arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   restrictions {
@@ -50,8 +52,13 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       locations        = []
     }
   }
-}
 
+  aliases = [
+    "nacholiya.site",
+    "www.nacholiya.site"
+  ]
+
+}
 resource "aws_cloudfront_origin_access_identity" "access_identity" {
   comment = "Access Identity for S3 bucket"
 }
@@ -80,4 +87,11 @@ resource "null_resource" "cloudfront_invalidation" {
   provisioner "local-exec" {
     command = "aws cloudfront create-invalidation --distribution-id ${aws_cloudfront_distribution.s3_distribution.id} --paths '/*'"
   }
+}
+
+data "aws_acm_certificate" "certificate" {
+  domain      = "nacholiya.site"
+  statuses    = ["ISSUED"]
+  most_recent = true
+  provider    = aws.us_east_1
 }
