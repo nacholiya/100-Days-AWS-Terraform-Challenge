@@ -95,8 +95,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 46 | S3 Advanced | Lifecycle rules & intelligent tiering | ✅ | [View](./Day-46-s3-advanced) |
 | 47 | S3 Access Logs | Logging and audit of bucket access | ✅ | [View](./Day-47-s3-logs) |
 | 48 | CloudFront | CDN for S3 static website | ✅ | [View](./Day-48-cloudfront) |
-| **49** | **WAF** | **Protect application using Web Application Firewall** | **✅** | **[View](./Day-49-waf)** |
-
+| 49 | WAF | Protect application using Web Application Firewall | ✅ | [View](./Day-49-waf) |
+| **50** | **API Gateway** | **Build REST API infrastructure** | **✅** | **[View](./Day-50-api)** |
 ---
 
 ## 🚀 How to Use
@@ -116,7 +116,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 50** =  API Gateway REST API Infra
+- **Day 51** =  Lambda Basics Serverless Function
 - Focus on reusable, production-grade infrastructure
 
 ---
