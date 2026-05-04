@@ -97,7 +97,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 48 | CloudFront | CDN for S3 static website | ✅ | [View](./Day-48-cloudfront) |
 | 49 | WAF | Protect application using Web Application Firewall | ✅ | [View](./Day-49-waf) |
 | 50 | API Gateway | Build REST API infrastructure | ✅ | [View](./Day-50-api) |
-| **51** | **Lambda Basics** | **Serverless function deployment** | **✅** | **[View](./Day-51-lambda)** |
+| 51 | Lambda Basics | Serverless function deployment | ✅ | [View](./Day-51-lambda)|
+| **52** | **Lambda + API Gateway** | **End-to-end serverless API** | **✅** | **[View](./Day-52-serverless-api)** |
 ---
 
 ## 🚀 How to Use
@@ -117,7 +118,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 52** = Lambda + API Gateway End-to-end Serverless
+- **Day 53** = EventBridge Event-Driven Architecture
 - Focus on reusable, production-grade infrastructure
 
 ---
