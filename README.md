@@ -99,7 +99,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 50 | API Gateway | Build REST API infrastructure | ✅ | [View](./Day-50-api) |
 | 51 | Lambda Basics | Serverless function deployment | ✅ | [View](./Day-51-lambda)|
 | 52 | Lambda + API Gateway | End-to-end serverless API | ✅ | [View](./Day-52-serverless-api) |
-| **53** | **EventBridge** | **Event-driven architecture with scheduled triggers** | **✅** | **[View](./Day-53-eventbridge)** |
+| 53 | EventBridge | Event-driven architecture with scheduled triggers | ✅ | [View](./Day-53-eventbridge) |
+| **54** | **SQS** | **Queue-based decoupling architecture** | **✅** | **[View](./Day-54-sqs)** |
 ---
 
 ## 🚀 How to Use
@@ -119,7 +120,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 54** = SQS Queue-based decoupling
+- **Day 55** = SNS Advanced Fan-out messaging
 - Focus on reusable, production-grade infrastructure
 
 ---
