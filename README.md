@@ -101,7 +101,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 52 | Lambda + API Gateway | End-to-end serverless API | ✅ | [View](./Day-52-serverless-api) |
 | 53 | EventBridge | Event-driven architecture with scheduled triggers | ✅ | [View](./Day-53-eventbridge) |
 | 54 | SQS | Queue-based decoupling architecture | ✅ | [View](./Day-54-sqs) |
-| **55** | **SNS Advanced** | **Fan-out messaging architecture** | **✅** | **[View](./Day-55-sns-advanced)** |
+| 55 | SNS Advanced | Fan-out messaging architecture | ✅ | [View](./Day-55-sns-advanced) |
+| **56** | **Step Functions** | **Workflow orchestration with Lambda** | **✅** | **[View](./Day-56-step-functions)** |
 ---
 
 ## 🚀 How to Use
@@ -121,7 +122,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 56** = Step Functions Workflow orchestration
+- **Day 57** = ECS Basics ECS cluster
 - Focus on reusable, production-grade infrastructure
 
 ---
