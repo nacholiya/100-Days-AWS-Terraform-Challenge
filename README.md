@@ -102,7 +102,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 53 | EventBridge | Event-driven architecture with scheduled triggers | ✅ | [View](./Day-53-eventbridge) |
 | 54 | SQS | Queue-based decoupling architecture | ✅ | [View](./Day-54-sqs) |
 | 55 | SNS Advanced | Fan-out messaging architecture | ✅ | [View](./Day-55-sns-advanced) |
-| **56** | **Step Functions** | **Workflow orchestration with Lambda** | **✅** | **[View](./Day-56-step-functions)** |
+| 56 | Step Functions | Workflow orchestration with Lambda | ✅ | [View](./Day-56-step-functions) |
+| **57** | **ECS Basics** | **Deploy containerized 2048 game application on ECS** | **⏳** | **[View](./Day-57-ecs-basics)** |
 ---
 
 ## 🚀 How to Use
@@ -122,7 +123,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 57** = ECS Basics ECS cluster
+- **Day 58** = ECS + ALB Containerized app
 - Focus on reusable, production-grade infrastructure
 
 ---
