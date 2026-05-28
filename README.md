@@ -103,7 +103,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 54 | SQS | Queue-based decoupling architecture | ✅ | [View](./Day-54-sqs) |
 | 55 | SNS Advanced | Fan-out messaging architecture | ✅ | [View](./Day-55-sns-advanced) |
 | 56 | Step Functions | Workflow orchestration with Lambda | ✅ | [View](./Day-56-step-functions) |
-| **57** | **ECS Basics** | **Deploy containerized 2048 game application on ECS** | **⏳** | **[View](./Day-57-ecs-basics)** |
+| 57 | ECS Basics | Deploy containerized 2048 game application on ECS | ✅ | [View](./Day-57-ecs-basics) |
+| **58** | **ECS + ALB** | **Load-balanced containerized application** | **✅** | **[View](./Day-58-ecs-alb)** |
 ---
 
 ## 🚀 How to Use
@@ -123,7 +124,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 58** = ECS + ALB Containerized app
+- **Day 59** = ECR Docker registry
 - Focus on reusable, production-grade infrastructure
 
 ---
