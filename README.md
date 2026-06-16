@@ -105,7 +105,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 56 | Step Functions | Workflow orchestration with Lambda | ✅ | [View](./Day-56-step-functions) |
 | 57 | ECS Basics | Deploy containerized 2048 game application on ECS | ✅ | [View](./Day-57-ecs-basics) |
 | 58 | ECS + ALB | Load-balanced containerized application | ✅ | [View](./Day-58-ecs-alb) |
-| **59** | **ECR** | **Docker image registry for ECS workloads** | **✅** | **[View](./Day-59-ecr)** |
+| 59 | ECR | Docker image registry for ECS workloads | ✅ | [View](./Day-59-ecr) |
+| **60** | **ECS Autoscaling** | **Automatically scale ECS tasks using CloudWatch metrics** | **✅** | **[View](./Day-60-ecs-asg)** |
 ---
 
 ## 🚀 How to Use
@@ -125,7 +126,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 60** = ECS Autoscaling Scale containers
+- **Day 61** = Fargate Serverless containers
 - Focus on reusable, production-grade infrastructure
 
 ---
