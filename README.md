@@ -106,7 +106,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 57 | ECS Basics | Deploy containerized 2048 game application on ECS | ✅ | [View](./Day-57-ecs-basics) |
 | 58 | ECS + ALB | Load-balanced containerized application | ✅ | [View](./Day-58-ecs-alb) |
 | 59 | ECR | Docker image registry for ECS workloads | ✅ | [View](./Day-59-ecr) |
-| **60** | **ECS Autoscaling** | **Automatically scale ECS tasks using CloudWatch metrics** | **✅** | **[View](./Day-60-ecs-asg)** |
+| 60 | ECS Autoscaling | Automatically scale ECS tasks using CloudWatch metrics | ✅ | [View](./Day-60-ecs-asg) |
+| **61** | **ECS EC2 Launch Type** | **Deploy containers on self-managed EC2 instances** | **✅** | **[View](./Day-61-ecs-ec2-launch)** |
 ---
 
 ## 🚀 How to Use
@@ -126,7 +127,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 61** = Fargate Serverless containers
+- **Day 62** = RDS Basics MySQL/Postgres instance
 - Focus on reusable, production-grade infrastructure
 
 ---
