@@ -107,7 +107,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 58 | ECS + ALB | Load-balanced containerized application | ✅ | [View](./Day-58-ecs-alb) |
 | 59 | ECR | Docker image registry for ECS workloads | ✅ | [View](./Day-59-ecr) |
 | 60 | ECS Autoscaling | Automatically scale ECS tasks using CloudWatch metrics | ✅ | [View](./Day-60-ecs-asg) |
-| **61** | **ECS EC2 Launch Type** | **Deploy containers on self-managed EC2 instances** | **✅** | **[View](./Day-61-ecs-ec2-launch)** |
+| 61 | ECS EC2 Launch Type | Deploy containers on self-managed EC2 instances | ✅ | [View](./Day-61-ecs-ec2-launch) |
+| **62** | **RDS Basics** | **Deploy managed MySQL database using Amazon RDS** | **✅** | **[View](./Day-62-rds)** |
 ---
 
 ## 🚀 How to Use
@@ -127,7 +128,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 62** = RDS Basics MySQL/Postgres instance
+- **Day 63** = RDS Security Subnets, SG, encryption
 - Focus on reusable, production-grade infrastructure
 
 ---
