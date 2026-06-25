@@ -43,7 +43,7 @@ resource "aws_route_table_association" "rt_assoc" {
 
 resource "aws_security_group" "baiston_sg" {
   vpc_id = aws_vpc.vpc.id
-  
+
   #tfsec:ignore:aws-ec2-no-public-ingress-sgr Reason: ALB must be publicly accessible
   ingress {
     cidr_blocks = ["0.0.0.0/0"]
@@ -77,18 +77,18 @@ resource "aws_db_subnet_group" "db_subnet_group" {
 }
 
 resource "aws_db_instance" "db" {
-  engine                    = "mysql"
-  engine_version            = "8.4"
-  instance_class            = "db.t3.micro"
-  allocated_storage         = 20
-  db_name                   = "day62_db"
-  password                  = var.db_password
-  username                  = "admin"
-  vpc_security_group_ids    = [aws_security_group.rds_sg.id]
-  db_subnet_group_name      = aws_db_subnet_group.db_subnet_group.name
-  publicly_accessible       = false
-  multi_az                  = false
-  skip_final_snapshot = true
+  engine                 = "mysql"
+  engine_version         = "8.4"
+  instance_class         = "db.t3.micro"
+  allocated_storage      = 20
+  db_name                = "day62_db"
+  password               = var.db_password
+  username               = "admin"
+  vpc_security_group_ids = [aws_security_group.rds_sg.id]
+  db_subnet_group_name   = aws_db_subnet_group.db_subnet_group.name
+  publicly_accessible    = false
+  multi_az               = false
+  skip_final_snapshot    = true
 }
 
 resource "aws_key_pair" "key_pair" {
