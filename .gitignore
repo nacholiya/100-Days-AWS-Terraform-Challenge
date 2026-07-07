@@ -43,6 +43,7 @@ day21-key*
 day-24-*
 day-25-*
 baiston_keypair*
+bastion_keypair*
 # TLS Certificates
 private.key
 certificate.crt
