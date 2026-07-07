@@ -108,7 +108,8 @@ This challenge focuses on **consistency, depth, and real-world DevOps skills**.
 | 59 | ECR | Docker image registry for ECS workloads | ✅ | [View](./Day-59-ecr) |
 | 60 | ECS Autoscaling | Automatically scale ECS tasks using CloudWatch metrics | ✅ | [View](./Day-60-ecs-asg) |
 | 61 | ECS EC2 Launch Type | Deploy containers on self-managed EC2 instances | ✅ | [View](./Day-61-ecs-ec2-launch) |
-| **62** | **RDS Basics** | **Deploy managed MySQL database using Amazon RDS** | **✅** | **[View](./Day-62-rds)** |
+| 62 | RDS Basics | Deploy managed MySQL database using Amazon RDS | ✅ | [View](./Day-62-rds) |
+| **63** | **RDS Backup & Disaster Recovery** | **Secure RDS with backups, Bastion Host, encryption, and deletion protection** | **✅** | **[View](./Day-63-rds-backup-disaster-recovery/)** |
 ---
 
 ## 🚀 How to Use
@@ -128,7 +129,7 @@ terraform destroy
 ---
 
 ## 🗺️ Roadmap (Upcoming)
-- **Day 63** = RDS Security Subnets, SG, encryption
+- **Day 64** = Aurora Highly available DB
 - Focus on reusable, production-grade infrastructure
 
 ---
